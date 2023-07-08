@@ -51,6 +51,7 @@ li {
     z-index: 1;
     background-color: none;
     height: 12vh;
+    background-color: rgb(247, 249, 250);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .logo{
