@@ -1,6 +1,6 @@
 import { Box, Container, Input, Grid, GridItem } from '@chakra-ui/react'
 import {Card} from '../../components/index'
-import React from 'react'
+// import React from 'react'
 const obj = {
   name: "nhan",
   position: "intern",

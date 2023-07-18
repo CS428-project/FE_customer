@@ -1,7 +1,7 @@
-import { Box, Center, Container, Flex } from '@chakra-ui/react'
+import { Box  } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import "./Header.css";
-import React from 'react'
+// import React from 'react'
 
 export default function Header() {
   return (
