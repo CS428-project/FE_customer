@@ -5,7 +5,7 @@ export const Footer = () => (
     justify="flex-start"
     align="flex-start"
     spacing="0px"
-    width="1441px"
+    width="100%"
     height="145px"
     maxWidth="100%"
   >
@@ -16,7 +16,7 @@ export const Footer = () => (
       align="center"
       spacing="10px"
       overflow="hidden"
-      width="1440px"
+      width="100%"
       flex="1"
       maxWidth="100%"
       background="#A7ECEE"

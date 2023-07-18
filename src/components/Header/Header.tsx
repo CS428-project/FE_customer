@@ -24,11 +24,15 @@ export default function Header() {
             <li>
               <Link to={'/mentor'}>Become a mentor</Link>
             </li>
+            <li>
+            <Link to={'/login'}>
+              <Box as='button' borderRadius='md' ml={'25px'} bg='#146C94' color='white' px={4} h={10}>
+                Signup/Login
+              </Box>
+            </Link>
+            </li>
           </ul>
         </div>
-        <Box as='button' borderRadius='md' mr={'20px'} bg='#146C94' color='white' px={4} h={8}>
-          Signup/Login
-        </Box>
       </div>
     
 
