@@ -1,12 +1,37 @@
 import { Box, Container, Input, Grid, GridItem } from '@chakra-ui/react'
 import {Card} from '../../components/index'
-// import React from 'react'
-const obj = {
-  name: "nhan",
-  position: "intern",
-  fields: [],
+import { useEffect, useState } from 'react'
+
+
+interface MentorInfoProps {
+  name: string, 
+  position: string, 
+  fields: string[]
 }
+
 export default function Category() {
+
+  const [mentorInfo, setMentorInfo] = useState<MentorInfoProps[]>([]); 
+
+  useEffect(() => {
+    fetchMentorInfo(); 
+  }, [])
+
+  const fetchMentorInfo = async () => {
+    try {
+      const res = await fetch('https://64b659dfdf0839c97e156749.mockapi.io/api/v1/mentor', {
+        method: 'GET', 
+        headers: {
+          'content-type': 'application/json'
+        }
+      })
+
+      const info = await res.json(); 
+      setMentorInfo(info);
+    } catch(err) {
+      console.error('Error fetching data', err); 
+    }
+  }
   return (
     <div>
         <Container display={'flex'} justifyContent={'center'} mt={'12vh'} alignItems={'center'} maxW={'100%'} h={'14vh'} bg={''}>
@@ -16,12 +41,13 @@ export default function Category() {
         <hr className='flex_cen' style={{width:'80%', margin: '0 auto 15px'}}/>
         <div className="list_mentor flex_cen">
         <Grid templateColumns='repeat(4, 1fr)' gap={8} >
-            <GridItem><Card {...obj} /></GridItem>
-            <GridItem><Card {...obj} /></GridItem>
-            <GridItem><Card {...obj} /></GridItem>  
-            <GridItem><Card {...obj} /></GridItem>  
-            <GridItem><Card {...obj} /></GridItem>  
-            <GridItem><Card {...obj} /></GridItem>  
+            {
+              mentorInfo.map((mentor: MentorInfoProps, index: number) => {
+                return (
+                  <GridItem key={index}><Card {...mentor} /></GridItem>
+                )
+              })
+            }
         </Grid>
         </div>
     </div>
