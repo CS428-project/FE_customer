@@ -11,7 +11,7 @@ interface MentorInfoProps {
 
 export default function Category() {
 
-  const [mentorInfo, setMentorInfo] = useState<MentorInfoProps[]>([]); 
+  const [mentorsInfo, setMentorsInfo] = useState<MentorInfoProps[]>([]); 
 
   useEffect(() => {
     fetchMentorInfo(); 
@@ -27,7 +27,7 @@ export default function Category() {
       })
 
       const info = await res.json(); 
-      setMentorInfo(info);
+      setMentorsInfo(info);
     } catch(err) {
       console.error('Error fetching data', err); 
     }
@@ -42,7 +42,7 @@ export default function Category() {
         <div className="list_mentor flex_cen">
         <Grid templateColumns='repeat(4, 1fr)' gap={8} >
             {
-              mentorInfo.map((mentor: MentorInfoProps, index: number) => {
+              mentorsInfo.map((mentor: MentorInfoProps, index: number) => {
                 return (
                   <GridItem key={index}><Card {...mentor} /></GridItem>
                 )
