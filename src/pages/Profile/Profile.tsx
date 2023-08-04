@@ -1,6 +1,6 @@
 import { Box, Flex, Avatar, Heading, Text, Button } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 interface MentorInfoProps {
   name: string,
