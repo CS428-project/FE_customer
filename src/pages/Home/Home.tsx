@@ -1,7 +1,11 @@
 // import React from 'react'
 
+import { Billing } from "..";
+
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Billing></Billing>
+    </div>
   )
 }

@@ -7,7 +7,9 @@ import Registration from "./Registration/Registration";
 import Category from "./Category/Category";
 import Profile from "./Profile/Profile";
 import SignUp from "./SignUp/SignUp";
+import Billing from "./Billing/Billing";
 
 
 
-export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp}
+
+export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp, Billing}
