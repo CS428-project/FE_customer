@@ -1,7 +1,7 @@
 import {Header, Footer} from './components/index';
 import {Route, Routes} from 'react-router-dom'
 import './App.css'
-import { About, Category, Faqs, Home, Login, News, Profile, Registration, SignUp } from './pages';
+import { About, Category, Faqs, Home, Login, News, Profile, Registration, SignUp, BookingManage, BookingList } from './pages';
 
 
 function App() {
@@ -20,6 +20,9 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
+        {/* <Route path='/booking-manage' element={<BookingManage />}/> */}
+        {/* <Route path='/booking-list' element={<BookingList />}/> */}
+
       </Routes>
       <Footer></Footer>
     </>

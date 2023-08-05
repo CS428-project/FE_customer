@@ -8,8 +8,7 @@ import Category from "./Category/Category";
 import Profile from "./Profile/Profile";
 import SignUp from "./SignUp/SignUp";
 import Billing from "./Billing/Billing";
+import BookingManage from "../components/BookingList/BookingManage";
+import BookingList from "../components/BookingList/BookingList";
 
-
-
-
-export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp, Billing}
+export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp, Billing, BookingManage, BookingList}
