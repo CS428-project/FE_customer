@@ -10,5 +10,6 @@ import SignUp from "./SignUp/SignUp";
 import Billing from "./Billing/Billing";
 import BookingManage from "../components/BookingList/BookingManage";
 import BookingList from "../components/BookingList/BookingList";
+import Payment from "./Payment/Payment";
 
-export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp, Billing, BookingManage, BookingList}
+export {Home, Faqs, News, Login, About, Registration, Category, Profile, SignUp, Billing, BookingManage, BookingList, Payment}

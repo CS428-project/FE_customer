@@ -40,7 +40,7 @@ export default function Payment() {
   }
 
   return (
-    <Box p={4}>
+    <Box p={4} mt="15vh">
       <Input
         mb={4}
         type="text"
