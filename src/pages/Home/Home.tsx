@@ -1,14 +1,18 @@
 // import React from 'react'
 
-import { Payment } from ".."
+import { Hero, Pricing, Quote, Statistic } from "../../components";
+
+// import { Payment } from ".."
 
 // import { Billing } from "..";
 
 export default function Home() {
   return (
     <div>
-      {/* <Billing></Billing> */}
-      <Payment></Payment>
+      <Hero></Hero>
+      <Quote></Quote>
+      <Statistic></Statistic>
+      <Pricing></Pricing>
     </div>
   )
 }
