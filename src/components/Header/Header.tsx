@@ -13,7 +13,7 @@ export default function Header() {
               <Link to={'/'}>Home</Link>
             </li>
             <li>
-              <Link to={'/news'}>Category</Link>
+              <Link to={'/category'}>Category</Link>
             </li>
             <li>
               <Link to={'/about'}>About us</Link>
