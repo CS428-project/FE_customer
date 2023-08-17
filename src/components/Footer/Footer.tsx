@@ -8,6 +8,9 @@ export const Footer = () => (
     width="100%"
     height="145px"
     maxWidth="100%"
+    position={"relative"}
+    bottom={'0'}
+
   >
     <Stack
       paddingX="40px"
