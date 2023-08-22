@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from "react"
+import { auth } from "../../auth/firebase"
 import {
   Box,
   Button,
@@ -8,15 +9,16 @@ import {
   VStack,
   Heading,
 } from "@chakra-ui/react"
-import axios from 'axios'
- 
+import { createUserWithEmailAndPassword } from "firebase/auth/cordova"
+// import axios from 'axios'
+
 interface FormData {
   username: string
   password: string
   email: string
   phoneNumber: string
 }
-const API_URL = 'http://localhost:8000/'
+// const API_URL = 'http://localhost:8000/'
 
 const App: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -35,14 +37,15 @@ const App: React.FC = () => {
   }
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    axios.post(API_URL+'/signup', formData)
-      .then((response) => {
-        console.log('Registration successful! Response:', response.data);
-      })
-      .catch((error) => {
-        console.error('Error during registration:', error);
-      });
+    e.preventDefault()
+    // axios.post(API_URL+'/signup', formData)
+    //   .then((response) => {
+    //     console.log('Registration successful! Response:', response.data);
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error during registration:', error);
+    //   });
+    createUserWithEmailAndPassword(auth, formData.email, formData.password)
   }
 
   return (
