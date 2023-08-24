@@ -1,6 +1,4 @@
 import { useState } from "react"
-// import axios from 'axios';
-// import React from 'react'
 import { auth } from "../../auth/firebase"
 import {
   Box,
