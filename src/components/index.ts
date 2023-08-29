@@ -8,5 +8,6 @@ import Hero from "./Hero/Hero";
 import Quote from "./Quote/Quote";
 import Statistic from "./Stat/Statistic";
 import Pricing from "./Pricing/Pricing";
+import CartItem from "./cartItem/cartItem";
 
-export  { Header, Card, Footer, SubscriptionPlanCard , Hero, Quote, Statistic, Pricing}
+export  { Header, Card, Footer, SubscriptionPlanCard , Hero, Quote, Statistic, Pricing, CartItem}

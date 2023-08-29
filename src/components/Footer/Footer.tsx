@@ -1,4 +1,4 @@
-import { Stack, Text } from '@chakra-ui/react'
+import { Stack, Text } from "@chakra-ui/react"
 
 export const Footer = () => (
   <Stack
@@ -9,9 +9,7 @@ export const Footer = () => (
     height="145px"
     maxWidth="100%"
     position={"relative"}
-    bottom={'0'}
-
-  >
+    bottom={"0"}>
     <Stack
       paddingX="40px"
       paddingY="16px"
@@ -22,30 +20,26 @@ export const Footer = () => (
       width="100%"
       flex="1"
       maxWidth="100%"
-      background="#A7ECEE"
-    >
+      background="#AEC3AE ">
       <Stack
         paddingStart="20px"
         paddingEnd="30px"
         direction="row"
         justify="flex-start"
         align="flex-start"
-        spacing="100px"
-      >
+        spacing="100px">
         <Stack
           justify="flex-start"
           align="flex-start"
           spacing="9px"
-          height="105px"
-        >
+          height="105px">
           <Text
             fontFamily="Inter"
             lineHeight="1.3"
             fontWeight="semibold"
             fontSize="20px"
             color="#000000"
-            textAlign="center"
-          >
+            textAlign="center">
             Address
           </Text>
           <Text
@@ -53,27 +47,27 @@ export const Footer = () => (
             lineHeight="1.3"
             fontWeight="regular"
             fontSize="20px"
-            color="#000000"
-          >
+            color="#000000">
             235 Nguyen Van Cu Street, Ward 4, District 5, Ho Chi Minh City,
             Vietnam
           </Text>
         </Stack>
-        <Stack justify="flex-start" align="flex-start" spacing="1px">
+        <Stack
+          justify="flex-start"
+          align="flex-start"
+          spacing="1px">
           <Stack
             justify="flex-start"
             align="flex-start"
             spacing="0px"
-            opacity="0.8"
-          >
+            opacity="0.8">
             <Text
               fontFamily="Inter"
               lineHeight="1.3"
               fontWeight="semibold"
               fontSize="20px"
               color="#000000"
-              textAlign="center"
-            >
+              textAlign="center">
               Phone
             </Text>
             <Text
@@ -81,20 +75,21 @@ export const Footer = () => (
               lineHeight="1.3"
               fontWeight="regular"
               fontSize="20px"
-              color="#000000"
-            >
+              color="#000000">
               (+028) 1234-567
             </Text>
           </Stack>
-          <Stack justify="flex-start" align="flex-start" spacing="0px">
+          <Stack
+            justify="flex-start"
+            align="flex-start"
+            spacing="0px">
             <Text
               fontFamily="Inter"
               lineHeight="1.3"
               fontWeight="semibold"
               fontSize="20px"
               color="#000000"
-              textAlign="center"
-            >
+              textAlign="center">
               Email
             </Text>
             <Text
@@ -102,21 +97,22 @@ export const Footer = () => (
               lineHeight="1.3"
               fontWeight="regular"
               fontSize="20px"
-              color="#000000"
-            >
+              color="#000000">
               info@caucheez.com
             </Text>
           </Stack>
         </Stack>
-        <Stack justify="flex-start" align="flex-start" spacing="0px">
+        <Stack
+          justify="flex-start"
+          align="flex-start"
+          spacing="0px">
           <Text
             fontFamily="Inter"
             lineHeight="1.3"
             fontWeight="semibold"
             fontSize="20px"
             color="#000000"
-            textAlign="center"
-          >
+            textAlign="center">
             Terms of use
           </Text>
           <Text
@@ -124,8 +120,7 @@ export const Footer = () => (
             lineHeight="1.3"
             fontWeight="regular"
             fontSize="20px"
-            color="#000000"
-          >
+            color="#000000">
             Privacy policy Refund policy FAQs
           </Text>
         </Stack>
@@ -133,16 +128,14 @@ export const Footer = () => (
           justify="flex-start"
           align="flex-start"
           spacing="0px"
-          height="104px"
-        >
+          height="104px">
           <Text
             fontFamily="Inter"
             lineHeight="1.3"
             fontWeight="semibold"
             fontSize="20px"
             color="#000000"
-            textAlign="center"
-          >
+            textAlign="center">
             Customer service
           </Text>
           <Text
@@ -150,8 +143,7 @@ export const Footer = () => (
             lineHeight="1.3"
             fontWeight="regular"
             fontSize="20px"
-            color="#000000"
-          >
+            color="#000000">
             1900 1234 (for mentee) 19005678 (for mentor)
           </Text>
         </Stack>
@@ -159,4 +151,3 @@ export const Footer = () => (
     </Stack>
   </Stack>
 )
-

@@ -1,12 +1,12 @@
 import "./card.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 interface CardProps {
   name: string;
   position: string;
   fields: string[];
 }
 
-const goToPayment = useNavigate()
+// const goToPayment = useNavigate()
 
 export default function Card({ name, position, fields }: CardProps) {
   return (

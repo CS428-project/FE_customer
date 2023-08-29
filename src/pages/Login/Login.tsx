@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { auth } from "../../auth/firebase"
 import {
   Box,
   FormControl,
@@ -9,15 +8,15 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/react"
-import { signInWithEmailAndPassword } from "firebase/auth"
+import { useNavigate } from "react-router-dom"
 
 function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const goToSignup = useNavigate()
 
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    signInWithEmailAndPassword(auth, email, password)
   }
 
   return (
@@ -40,36 +39,38 @@ function LoginPage() {
             marginX={"auto"}>
             Login
           </Heading>
-          <form action="#" onSubmit={handleLogin}>
-          <FormControl mb={4}>
-            <FormLabel>Email address</FormLabel>
-            <Input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              border={"1px"}
-              color={"#99DBF5"}
+          <form
+            action="#"
+            onSubmit={handleLogin}>
+            <FormControl mb={4}>
+              <FormLabel>Email address</FormLabel>
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                border={"1px"}
+                color={"#99DBF5"}
               />
-          </FormControl>
+            </FormControl>
 
-          <FormControl mb={4}>
-            <FormLabel>Password</FormLabel>
-            <Input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              border={"1px"}
-              color={"#99DBF5"}
+            <FormControl mb={4}>
+              <FormLabel>Password</FormLabel>
+              <Input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                border={"1px"}
+                color={"#99DBF5"}
               />
-          </FormControl>
+            </FormControl>
 
-          <Button
-            colorScheme="blue"
-            type="submit"
-            width="full">
-            Sign In
-          </Button>
-              </form>
+            <Button
+              colorScheme="blue"
+              type="submit"
+              width="full">
+              Sign In
+            </Button>
+          </form>
 
           <Button
             variant="outline"
@@ -77,8 +78,7 @@ function LoginPage() {
             width="full"
             my={"7px"}
             onClick={() => {
-              // Add your logic for creating a new account here
-              console.log("Creating account...")
+              goToSignup("/signup")
             }}>
             Create Account
           </Button>

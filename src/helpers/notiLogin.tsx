@@ -1,5 +1,5 @@
 // components/NotLoggedInNotification.tsx
-import React from "react"
+// import React from "react"
 import {
   Box,
   Alert,
@@ -8,7 +8,7 @@ import {
   AlertDescription,
 } from "@chakra-ui/react"
 
-const NotLoggedInNotification: React.FC = () => {
+export default function NotLoggedInNotification() {
   return (
     <Box mt={4}>
       <Alert status="warning">
@@ -21,5 +21,3 @@ const NotLoggedInNotification: React.FC = () => {
     </Box>
   )
 }
-
-export default NotLoggedInNotification
